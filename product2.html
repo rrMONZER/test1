@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> free fire</title>
+    <link rel="stylesheet" href="monzer1.css">
+
+</head>
+<body>
+    <header>
+<nav>
+            <ul>
+                <li><a href="monzer.html">الصفحة الرئيسية</a></li>
+               
+                <li><a href="abut.html">عن الشركة</a></l>
+                <li><a href="‪api.whatsapp.com/send/?phone=%2B249995869462&text=أرغب+بشراء+منتج+فرعي+1-1&type=phone_number&app_absent=0‬">اتصل بنا</a></li>
+            </ul>
+       
+        </nav>
+      
+      
+<h2> Free Fire Shop</h2>
+    </header>
+    <main>
+        <div class="sub-product">
+            <img src="free.jpg" alt="منتج فرعي 1-1">
+            <h2> بطاقة  فري فاير 1080+100</h2>
+            <p>بطاقات فري فاير 1080</p>
+            <button onclick="addToCart('منتج فرعي 1-1')">إضافة إلى السلة</button>
+        </div>
+        <div class="sub-product">
+            <img src="free.jpg" alt="منتج فرعي 1-2">
+            <h2>بطاقة فري فاير 100+10 </h2>
+            <p> بطاقات فري فاير 100+10</p>
+            <button onclick="addToCart('منتج فرعي 1-2')">إضافة إلى السلة</button>
+        </div>
+        <!-- المزيد من المنتجات الفرعية -->
+    </main>
+    <script>
+        function addToCart(productName) {
+            var whatsappNumber = "+249995869462";
+            var url = `https://wa.me/${whatsappNumber}?text=أرغب%20بشراء%20${encodeURIComponent(productName)}`;
+            window.location.href = url;
+        }
+    </script>
+</body>
+</html>
